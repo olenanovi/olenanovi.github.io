@@ -1,0 +1,12 @@
+main {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+main h1, p ol {
+	font-family: Arial;
+	text-align: center;
+}
+main img {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

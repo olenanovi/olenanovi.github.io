@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            form > div { padding: 10px; }
+            form input, form select, form textarea {
+                border-radius: 5px; 
+                border: 1px solid grey; 
+            }
+            form input[type="submit"]:hover, form input[type="reset"]:hover {
+                background-color: grey;
+                color: white;
+            }
+        </style>
+    </head>
+    <body style="background-color: #f0f0f0">
+        <form style="padding: 0% 30% 0% 30%;" name="submit_form">
+            <div>
+                <div style="float: left;">
+                    <label>Name</label>
+                    <input type="text" name="input_name">
+                </div>
+                <div style="float: right;">
+                    <label>Email</label>
+                    <input type="text" name="input_email">
+                </div>
+            </div>
+            <div style="margin-top: 10px; ">
+                <label>Course</label>
+                <br>
+                <input type="radio" name="radio">I
+                <input type="radio" name="radio">II
+                <input type="radio" name="radio">III
+                <input type="radio" name="radio">IV
+                <input type="radio" name="radio">V
+            </div>
+            <div>
+                <label>Department</label><br>
+                <select name='department'>
+                    
+                </select>
+                <script>
+                    var department = ["Department of Applied Mathematics", "Department of Computational Mathematics and Programming", "Department of Applied Physics and Nanomaterials Science", "Department of Mathematics", "Department of General Physics", "Department of International Information"];
+                    var text = "";
+                    var i;
+                    for (i = 0; i < department.length; i++) {
+                        text += "<option>" + department[i] + "</option>";
+                    }
+                    document.getElementsByName('department')[0].innerHTML = text;
+                </script>
+            </div>
+            <div>
+                <label>Interests</label><br>
+                <select name="interests" multiple>
+                
+                </select>
+                <script>
+                    var interests = ["Programing", "Planetary-scale platform", "Satellite Imagery", "Algorithms", "Math", "Applications"];
+                    var text = "";
+                    var i;
+                    for (i = 0; i < interests.length; i++) {
+                        text += "<option>" + interests[i] + "</option>";
+                    }
+                    document.getElementsByName('interests')[0].innerHTML = text;
+                </script>
+            </div>
+            <div>
+                <label>About</label><br>
+                <textarea cols="60" rows="10"></textarea>
+            </div>
+            <div>
+                <label><input type="checkbox" id = "termsCheck" checked> Confirm Terms & Conditions</label>
+            </div>
+            <div>
+                
+                <button id="thebutton">Sign Up</button>
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+        <script type="text/javascript">
+        document.getElementById("thebutton").addEventListener("click",validate_test);
+          function validate_test(e) {
+            e.preventDefault();
+              
+              if(document.forms["submit_form"]["input_name"].value == "") {
+                window.alert("Please, input name.");
+                  return false;
+              }
+              
+              if(document.forms["submit_form"]["input_email"].value == "") {
+                    window.alert("Please, input email.");
+                  return false;
+              }
+              
+              re = /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+              
+              if(!re.test(document.forms["submit_form"]["input_email"].value)) {
+                window.alert("Invalid email.");
+                return false;
+              }
+              
+              if(document.getElementById("termsCheck").checked == false) {
+                    window.alert("Please, check terms.");
+                  return false;
+              }
+              
+              window.alert("Thank You! The form created!");
+              return true;
+          }
+
+        </script>
+    </body>
+</html>

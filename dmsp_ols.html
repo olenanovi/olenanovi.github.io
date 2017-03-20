@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>DMSP-OLS</title>
+		<link rel="stylesheet" href="./css/header.css">
+		<link rel="stylesheet" href="./css/datasets_style_new.css">
+		<!-- -->
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+		<!-- -->
+		<link rel="shortcut icon" href="./img/earth_engine-16.png" type="image/x-icon">
+		
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div>
+				<img src="./img/GoogleEarthEngine_Grey_108.png" alt="gee_logo" class="logo">
+				</div>
+				<ul class="tab">
+					<li><a href="index.html" target="_parent">Home</a></li>
+					<li><a href="datasets_new.html" target="_parent">Datasets</a></li>
+					<li><a href="code_editor.html" target="_parent">CodeEditor</a></li>
+					<li><a href="visualization.html" target="_parent">Visualization</a></li>
+					<li><a target="_parent" href="form.html">Sign Up</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+		<div class = "bg-image">
+			<div class = "bg-transparent">
+				<h1 class="sub-head">DMSP-OLS</h1>
+			</div>
+		</div>
+		<div id="container">
+		<p id="sub-heading-paragraph">The Defense Meteorological Program (DMSP) Operational Linescan System (OLS) has a unique capability to detect visible and near-infrared (VNIR) emission sources at night.</p>
+		</div>
+		<ul>
+			<li>
+				<h2>About DMSP Satellites</h2>
+				<p>The DMSP Satellites of the actual series (Block-5D) fly in a sun-synchronous low earth orbit (833 km mean altitude) such that they pass over any given point on earth between 20:30 and 21:30 local time (Elvidge, et al., 2001). </p>
+				<p>With 14 orbits per day, each DMSP satellite provides global night-time coverage every 24 hours. There are normally 2 satellites orbiting simultaneously and each satellite has a lifespan of 6 to 8 years (see table 2.1 in section 2.3 for an overview of the satellites used over the years).	</p>
+		    </li>
+		    <li>
+		      <h2>About Version 4</h2>
+		      <p>Version 4 of the DMSP-OLS Nighttime Lights Time Series consists of cloud-free composites made using all the available archived DMSP-OLS smooth resolution data for calendar years. In cases where two satellites were collecting data - two composites were produced. The products are 30 arc second grids, spanning -180 to 180 degrees longitude and -65 to 75 degrees latitude.</p>
+		      <p>Each image in the collection contains the following bands: avg_vis, stable_lights, cf_cvg, avg_lights_x_pct.</p>
+		  </ul>
+		</main>
+
+
+        <footer>
+        	<div>
+        		<p>Information from <a href="https://explorer.earthengine.google.com/#detail/NOAA%2FDMSP-OLS%2FNIGHTTIME_LIGHTS" target="_blank">earthengine.google.com</a></p>
+        		<p>Powered by Olena Novitska, 2017</p>
+        	</div>
+        </footer>
+	</body>	
+</html>

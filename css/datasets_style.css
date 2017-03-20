@@ -1,0 +1,65 @@
+
+
+/* MAIN PART */
+button {
+	background-color: hsl(227,100%,88%);
+	align-content: center;
+}
+.container_up {
+	background-color: hsb(221,21%,91%);
+}
+.collections {
+	overflow: auto;
+}
+.collection-title {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #777;
+	font-size: 36px;
+}
+.collection-title small {
+	color: #777;
+	font-size: 70%;
+}
+.collection-item-outer {
+	border: 1px solid #959595;
+	display: inline-block;
+	float: left;
+	width: 27%;
+	box-sizing: border-box;
+	height: 600px;
+	margin-bottom: 30px;
+	margin-right: 3.16666666667%;
+	margin-left: 3.16666666667%;
+}
+.collection-item-outer .item-image {
+	width: 100%;
+	height: 300px;
+}
+.collection-item-outer .image1 {
+	background: url('../img/dataset_landsat.jpg') no-repeat;
+	background-size: cover;
+}
+.collection-item-outer .image2 {
+	background: url('../img/dataset_sentinel.jpg') no-repeat;
+	background-size: cover;
+}
+.collection-item-outer .image3 {
+	background: url('../img/dataset_modis.jpg') no-repeat;
+	background-size: cover;
+}
+.collection-item img,
+
+.collection-text {
+	padding: 0 20px 20px 20px;
+}
+.collection-text h3 {
+	text-align: center;
+	color: blue;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.collection-text p {
+	font-size: 1.2em;
+	overflow: auto;
+}
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>GEE</title>
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+		<link rel="shortcut icon" href="./img/earth_engine-16.png" type="image/x-icon">
+		
+	</head>
+	<body>
+		<script type="text/javascript">
+        setInterval(
+			function () {
+				now = new Date();
+			document.getElementById("date").innerHTML = "<b>" + (now.getMonth() + 1) + "/" + now.getDate() + "/" +(1900 + now.getYear()) + "</b>";
+			document.getElementById("time").innerHTML = "<b>" + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds() + "</b>";
+			}
+		, 1000);
+		</script>
+		<header>
+			<nav>
+				<div>
+				<img src="./img/GoogleEarthEngine_Grey_108.png" alt="gee_logo" class="logo">
+				</div>
+				<ul class="tab">
+					<li id = "date" style="height: 52px;"></li>
+					<li id = "time" style="height: 52px;"></li>
+					<li><a href="index.html" target="_parent">Home</a></li>
+					<li><a href="datasets_new.html" target="_parent">Datasets</a></li>
+					<li><a href="code_editor.html" target="_parent">CodeEditor</a></li>
+					<li><a href="visualization.html" target="_parent">Visualization</a></li>
+					<li><a target="_parent" href="form.html">Sign Up</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main class="main">
+		<div>
+			<div>
+			<img src="./img//meta-share_1.jpg" alt="gee_image" style="width: 100%; height: 400px">
+			</div>
+			<div>
+			
+				<h1>Meet Earth Engine</h1>
+				<!--<h2>A planetary-scale platform for Earth science data and analysis</h2>
+				<h2><i>Powered by Google's cloud infrastructure</i></h2>-->
+				<p><strong>Google Earth Engine</strong> combines a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis capabilities and makes it available for scientists, researchers, and developers to detect changes, map trends, and quantify differences on the Earth's surface.</p>
+				<h1>Global-Scale Insight</h1>
+				<p>Explore our interactive timelapse viewer to travel back in time and see how the world has changed over the past twenty-nine years. Timelapse is one example of how Earth Engine can help gain insight into petabyte-scale datasets.</p>
+				<h1>Ready-To-Use Datasets</h1>
+		        <p>The public data archive includes more than thirty years of historical imagery and scientific datasets, updated and expanded daily. It contains over <strong>two petabytes</strong> of geospatial data instantly available for analysis.</p>
+		    </div>
+        </div>	
+		</main>
+		
+        <footer>
+        	<div>
+        		<p>Information from <a href="https://earthengine.google.com/" target="_blank">earthengine.google.com</a></p>
+        		<p><i>Powered by Olena Novitska, 2017</i></p>
+        	</div>
+        </footer>
+		
+	</body>	
+</html>
